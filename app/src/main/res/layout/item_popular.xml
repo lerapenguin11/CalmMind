@@ -6,7 +6,6 @@
     android:layout_marginBottom="20dp"
     xmlns:tools="http://schemas.android.com/tools">
 
-
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="45dp"
@@ -29,7 +28,7 @@
                 android:preserveLegacyExternalStorage="true"
                 android:requestLegacyExternalStorage="true"
                 android:scaleType="fitXY"
-                tools:srcCompat="@drawable/icon1" />
+                tools:srcCompat="@drawable/ic_med1" />
         </androidx.cardview.widget.CardView>
     </androidx.cardview.widget.CardView>
 

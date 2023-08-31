@@ -20,11 +20,6 @@ class MainActivity : AppCompatActivity() {
         setStatusBarGradiant(this)
         setContentView(binding.root)
 
-        /*if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT){
-            window.setFlags(
-                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
-                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
-        }*/
         replaceFragment(HomeFragment())
 
         binding.bottomNavigationView.setOnItemSelectedListener {
