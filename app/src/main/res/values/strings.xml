@@ -2,4 +2,9 @@
     <string name="app_name">Calm Mind</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="explore_meditation">Explore meditation</string>
+    <string name="together_with_the_relaxed_mind_app">Together with the Relaxed Mind app.</string>
+    <string name="category">Category</string>
+    <string name="popular">Popular</string>
+    <string name="podcast_by_stainley">Podcast by Stainley</string>
 </resources>
