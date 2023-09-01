@@ -9,17 +9,19 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.calmmind.R
+import com.example.calmmind.business.model.MeditationModel
 import com.example.calmmind.databinding.FragmentHomeBinding
 import com.example.calmmind.presentation.adapter.CategoryAdapter
 import com.example.calmmind.presentation.adapter.PopularAdapter
+import com.example.calmmind.presentation.listener.PopularListener
 import com.example.calmmind.viewModel.HomeViewModel
 
-class HomeFragment : Fragment() {
+class HomeFragment : Fragment(), PopularListener {
     private var _binding : FragmentHomeBinding? = null
     private val binding get() = _binding!!
     private lateinit var homeViewModel : HomeViewModel
     private val categoryAdapter = CategoryAdapter()
-    private val popularAdapter = PopularAdapter()
+    private val popularAdapter = PopularAdapter(this)
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -35,7 +37,6 @@ class HomeFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
-
         setCategory()
         setPopular()
     }
@@ -56,5 +57,17 @@ class HomeFragment : Fragment() {
         homeViewModel.getCategory().observe(viewLifecycleOwner, Observer {
             categoryAdapter.setItem(it)
         })
+    }
+
+    override fun popularList(popular: MeditationModel) {
+        val bundle = Bundle()
+        bundle.putString("nameMed", popular.nameMeditation)
+        bundle.putString("namePodcast", popular.namePodcast)
+        bundle.putInt("icon", popular.icon)
+        val transaction = activity?.supportFragmentManager?.beginTransaction()
+        val fragment = PlaerFragment()
+        fragment.arguments = bundle
+        transaction?.replace(R.id.main_layout, fragment)
+        transaction?.commit()
     }
 }

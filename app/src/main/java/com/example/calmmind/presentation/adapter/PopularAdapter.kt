@@ -9,8 +9,9 @@ import android.widget.TextView
 import androidx.documentfile.R
 import androidx.recyclerview.widget.RecyclerView
 import com.example.calmmind.business.model.MeditationModel
+import com.example.calmmind.presentation.listener.PopularListener
 
-class PopularAdapter : RecyclerView.Adapter<PopularAdapter.PopularViewHolder>() {
+class PopularAdapter(val listener : PopularListener) : RecyclerView.Adapter<PopularAdapter.PopularViewHolder>() {
 
     private val popularList = mutableListOf<MeditationModel>()
 
@@ -28,6 +29,10 @@ class PopularAdapter : RecyclerView.Adapter<PopularAdapter.PopularViewHolder>() 
         holder.nameMeditation.text = popular.nameMeditation
         holder.namePodcast.text = popular.namePodcast
         holder.icon.setImageResource(popular.icon)
+
+        holder.itemView.setOnClickListener {
+            listener.popularList(popular)
+        }
     }
 
     @SuppressLint("NotifyDataSetChanged")
