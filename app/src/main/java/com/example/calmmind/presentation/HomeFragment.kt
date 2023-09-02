@@ -14,14 +14,18 @@ import com.example.calmmind.databinding.FragmentHomeBinding
 import com.example.calmmind.presentation.adapter.CategoryAdapter
 import com.example.calmmind.presentation.adapter.PopularAdapter
 import com.example.calmmind.presentation.listener.PopularListener
+import com.example.calmmind.utilits.replaceFragment
 import com.example.calmmind.viewModel.HomeViewModel
+import com.example.calmmind.viewModel.PlayerViewModel
 
 class HomeFragment : Fragment(), PopularListener {
     private var _binding : FragmentHomeBinding? = null
     private val binding get() = _binding!!
     private lateinit var homeViewModel : HomeViewModel
     private val categoryAdapter = CategoryAdapter()
-    private val popularAdapter = PopularAdapter(this)
+    /*private val popularAdapter = PopularAdapter(this)*/
+
+    private lateinit var playerViewModel: PlayerViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -31,6 +35,7 @@ class HomeFragment : Fragment(), PopularListener {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
 
         homeViewModel = ViewModelProvider(requireActivity()).get(HomeViewModel::class.java)
+        playerViewModel = ViewModelProvider(requireActivity()).get(PlayerViewModel::class.java)
 
         return binding.root
     }
@@ -42,12 +47,15 @@ class HomeFragment : Fragment(), PopularListener {
     }
 
     private fun setPopular() {
+        val adapter = PopularAdapter(this, playerViewModel.songs.value!!)
         binding.rvPopular.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
-        binding.rvPopular.adapter = popularAdapter
+        binding.rvPopular.adapter = adapter
 
-        homeViewModel.getPopular().observe(viewLifecycleOwner, Observer {
-            popularAdapter.setItem(it)
+        playerViewModel.songs.observe(viewLifecycleOwner, Observer { songs ->
+            adapter.setItem(songs)
         })
+
+
     }
 
     private fun setCategory() {
@@ -60,14 +68,7 @@ class HomeFragment : Fragment(), PopularListener {
     }
 
     override fun popularList(popular: MeditationModel) {
-        val bundle = Bundle()
-        bundle.putString("nameMed", popular.nameMeditation)
-        bundle.putString("namePodcast", popular.namePodcast)
-        bundle.putInt("icon", popular.icon)
-        val transaction = activity?.supportFragmentManager?.beginTransaction()
-        val fragment = PlaerFragment()
-        fragment.arguments = bundle
-        transaction?.replace(R.id.main_layout, fragment)
-        transaction?.commit()
+        playerViewModel.playSong(song = popular)
+        replaceFragment(PlayerFragment())
     }
 }

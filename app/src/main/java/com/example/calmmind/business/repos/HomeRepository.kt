@@ -37,9 +37,10 @@ class HomeRepository {
             val icon = i.icon
             val nameMeditation = i.nameMeditation
             val namePodcast = i.namePodcast
+            val music = i.music
 
             val listCategoryModel = MeditationModel(
-                icon = icon, nameMeditation = nameMeditation, namePodcast = namePodcast
+                icon = icon, nameMeditation = nameMeditation, namePodcast = namePodcast, music = music
             )
             list.add(listCategoryModel)
         }

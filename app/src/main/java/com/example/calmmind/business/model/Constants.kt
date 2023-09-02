@@ -32,7 +32,7 @@ object Constants{
     fun getPopular() : MutableList<MeditationModel>{
         val popularList = mutableListOf<MeditationModel>()
 
-        val popular1 = MeditationModel("Unbeaten", "Podcast by Vladimir", R.drawable.ic_med1)
+        val popular1 = MeditationModel("Unbeaten", "Podcast by Vladimir", R.drawable.ic_med1, R.raw.med_popular1)
         popularList.add(popular1)
 
         return popularList

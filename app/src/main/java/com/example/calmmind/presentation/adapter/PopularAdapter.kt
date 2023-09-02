@@ -6,14 +6,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.documentfile.R
 import androidx.recyclerview.widget.RecyclerView
 import com.example.calmmind.business.model.MeditationModel
 import com.example.calmmind.presentation.listener.PopularListener
 
-class PopularAdapter(val listener : PopularListener) : RecyclerView.Adapter<PopularAdapter.PopularViewHolder>() {
+class PopularAdapter(val listener : PopularListener, private var popularList: List<MeditationModel>) : RecyclerView.Adapter<PopularAdapter.PopularViewHolder>() {
 
-    private val popularList = mutableListOf<MeditationModel>()
+    //private val popularList = mutableListOf<MeditationModel>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PopularViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(com.example.calmmind.R.layout.item_popular, parent, false)
@@ -37,8 +36,7 @@ class PopularAdapter(val listener : PopularListener) : RecyclerView.Adapter<Popu
 
     @SuppressLint("NotifyDataSetChanged")
     fun setItem(resultPopular : List<MeditationModel>){
-        this.popularList.clear()
-        this.popularList.addAll(resultPopular)
+        popularList = resultPopular
         notifyDataSetChanged()
     }
 

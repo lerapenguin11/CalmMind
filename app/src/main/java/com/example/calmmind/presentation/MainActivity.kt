@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         APP_ACTIVITY = this
+
         setStatusBarGradiant(this)
         setContentView(binding.root)
 
