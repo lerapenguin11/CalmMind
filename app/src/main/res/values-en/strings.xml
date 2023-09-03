@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Calm Mind</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="explore_meditation">Explore meditation</string>
+    <string name="together_with_the_relaxed_mind_app">Together with the Relaxed Mind app.</string>
+    <string name="category">Category</string>
+    <string name="popular">Popular</string>
+    <string name="podcast_by_stainley">Podcast by Stainley</string>
+    <string name="education">Education</string>
+    <string name="arts">Arts</string>
+    <string name="design">Design</string>
+    <string name="all_meditation">All meditation</string>
+    <string name="what_is_the_use">What is the use</string>
+    <string name="music_for_meditation_helps_to_calm_down_and_distract_from_your_own_thoughts_it_also_helps_the_body_relax_by_stimulating_the_parasympathetic_nervous_system_which_is_responsible_for_calming_down_and_transitioning_to_sleep">Music for meditation helps to calm down and distract from your own thoughts. It also helps the body relax by stimulating the parasympathetic nervous system, which is responsible for calming down and transitioning to sleep.</string>
+    <string name="name_med1">Unbeaten</string>
+    <string name="name_med2">Plant for environment</string>
+    <string name="name_med3">Threat Better</string>
+    <string name="name_med4">Meditative state</string>
+    <string name="name_med5">Yoga</string>
+    <string name="name_med6">Binaural music</string>
+    <string name="name_med7">Plant</string>
+    <string name="name_med8">Plant yoga</string>
+    <string name="name_podcast1">Podcast by Vladimir</string>
+    <string name="name_podcast2">Podcast by Stainley</string>
+    <string name="name_podcast3">Podcast by Mendez</string>
+    <string name="welcome">Welcome!</string>
+    <string name="meditate_with_the_relaxed_mind_app_there_is_a_list_of_meditation_categories_on_the_home_screen_click_on_one_of_them_and_a_list_of_meditations_will_be_available_to_you">Meditate with the Relaxed Mind app. There is a list of meditation categories on the home screen, click on one of them and a list of meditations will be available to you.</string>
+    <string name="skip">Skip</string>
+    <string name="when_you_click_on_one_of_the_meditations_the_player_screen_will_open_and_the_music_will_play_you_can_pause_it_rewind_it_turn_on_the_next_one_go_back_to_the_previous_one_shuffle_the_playlist_and_turn_on_repeat">When you click on one of the meditations, the player screen will open and the music will play. You can pause it, rewind it, turn on the next one, go back to the previous one, shuffle the playlist and turn on repeat.</string>
+    <string name="Relaxed_Mind">Relaxed Mind</string>
+
+</resources>

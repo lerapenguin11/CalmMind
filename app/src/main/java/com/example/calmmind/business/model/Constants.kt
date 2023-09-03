@@ -1,40 +1,64 @@
 package com.example.calmmind.business.model
 
-import android.widget.PopupMenu
 import com.example.calmmind.R
 
 object Constants{
 
-    fun getCategory() : MutableList<CategoryModel> {
-        val categoryList = mutableListOf<CategoryModel>()
+    fun getPopularList() : List<MeditationModel>{
+        val popular = listOf(
+            MeditationModel(R.string.name_med5, R.string.name_podcast1, R.drawable.ic_med5, R.raw.med_6),
+            MeditationModel(R.string.name_med5, R.string.name_podcast1, R.drawable.ic_med5, R.raw.med_6),
+            MeditationModel(R.string.name_med6, R.string.name_podcast3, R.drawable.ic_med6, R.raw.med_7),
+            MeditationModel(R.string.name_med3, R.string.name_podcast3, R.drawable.ic_med3, R.raw.med_3)
+        )
 
-        val category1 = CategoryModel("Education", R.drawable.ic_defolt)
-        categoryList.add(category1)
-
-        val category2 = CategoryModel("Design", R.drawable.ic_category2)
-        categoryList.add(category2)
-
-        val category3 = CategoryModel("Arts", R.drawable.ic_category3)
-        categoryList.add(category3)
-
-        val category4 = CategoryModel("Nature", R.drawable.ic_category4)
-        categoryList.add(category4)
-
-        val category5 = CategoryModel("Dream", R.drawable.ic_category5)
-        categoryList.add(category5)
-
-        val category6 = CategoryModel("Sport", R.drawable.ic_categoty1)
-        categoryList.add(category6)
-
-        return categoryList
+        return popular
     }
 
-    fun getPopular() : MutableList<MeditationModel>{
-        val popularList = mutableListOf<MeditationModel>()
+    fun getEducationList() : List<MeditationModel>{
+        val education = listOf(
+            MeditationModel(R.string.name_med5, R.string.name_podcast1, R.drawable.ic_med5, R.raw.med_6),
+            MeditationModel(R.string.name_med6, R.string.name_podcast3, R.drawable.ic_med6, R.raw.med_7),
+            MeditationModel(R.string.name_med7, R.string.name_podcast2, R.drawable.ic_med1, R.raw.med_8),
+            MeditationModel(R.string.name_med8, R.string.name_podcast3, R.drawable.ic_med2, R.raw.med_popular2)
+        )
 
-        val popular1 = MeditationModel("Unbeaten", "Podcast by Vladimir", R.drawable.ic_med1, R.raw.med_popular1)
-        popularList.add(popular1)
+        return education
+    }
 
-        return popularList
+    fun getDesignList() : List<MeditationModel>{
+        val design = listOf(
+            MeditationModel(R.string.name_med4, R.string.name_podcast1, R.drawable.ic_med4, R.raw.med_4),
+            MeditationModel(R.string.name_med5, R.string.name_podcast1, R.drawable.ic_med5, R.raw.med_6),
+            MeditationModel(R.string.name_med6, R.string.name_podcast3, R.drawable.ic_med6, R.raw.med_7),
+            MeditationModel(R.string.name_med7, R.string.name_podcast2, R.drawable.ic_med1, R.raw.med_8)
+        )
+
+        return design
+    }
+
+    fun getArtsList() : List<MeditationModel>{
+        val design = listOf(
+            MeditationModel(R.string.name_med1, R.string.name_podcast1, R.drawable.ic_med1, R.raw.med_popular1),
+            MeditationModel(R.string.name_med2, R.string.name_podcast2, R.drawable.ic_med2, R.raw.med_popular2),
+            MeditationModel(R.string.name_med3, R.string.name_podcast3, R.drawable.ic_med3, R.raw.med_3)
+        )
+
+        return design
+    }
+
+    fun getAllList() : List<MeditationModel>{
+        val all = listOf(
+            MeditationModel(R.string.name_med1, R.string.name_podcast1, R.drawable.ic_med1, R.raw.med_popular1),
+            MeditationModel(R.string.name_med2, R.string.name_podcast2, R.drawable.ic_med2, R.raw.med_popular2),
+            MeditationModel(R.string.name_med3, R.string.name_podcast3, R.drawable.ic_med3, R.raw.med_3),
+            MeditationModel(R.string.name_med4, R.string.name_podcast1, R.drawable.ic_med4, R.raw.med_4),
+            MeditationModel(R.string.name_med5, R.string.name_podcast1, R.drawable.ic_med5, R.raw.med_6),
+            MeditationModel(R.string.name_med6, R.string.name_podcast3, R.drawable.ic_med6, R.raw.med_7),
+            MeditationModel(R.string.name_med7, R.string.name_podcast2, R.drawable.ic_med1, R.raw.med_8),
+            MeditationModel(R.string.name_med8, R.string.name_podcast3, R.drawable.ic_med2, R.raw.med_popular2),
+        )
+
+        return all
     }
 }

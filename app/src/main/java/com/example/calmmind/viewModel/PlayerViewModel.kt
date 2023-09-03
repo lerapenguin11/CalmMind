@@ -15,18 +15,16 @@ class PlayerViewModel : ViewModel() {
     val isPlaying: MutableLiveData<Boolean> = MutableLiveData(false)
     val isShuffleEnabled: MutableLiveData<Boolean> = MutableLiveData(false)
     val isRepeatEnabled: MutableLiveData<Boolean> = MutableLiveData(false)
-    private var shuffledSongs: List<MeditationModel> = emptyList()
+    var shuffledSongs: List<MeditationModel> = emptyList()
     private var currentSongIndex: Int = -1
 
-    private var backgroundMusic : MediaPlayer? = null
+    var player = false
+
+    var backgroundMusic : MediaPlayer? = null
 
     init {
-        // Загрузка списка песен из репозитория или другого источника данных
 
-        val songsList = listOf(
-            MeditationModel("Unbeaten", "Podcast by Vladimir", R.drawable.ic_med1, R.raw.med_popular1),
-            MeditationModel("Plant for environment", "Podcast by Stainley", R.drawable.ic_med2, R.raw.med_popular2)
-        )
+        val songsList = Constants.getPopularList()
 
         songs.value = songsList
         shuffledSongs = songsList.shuffled()

@@ -25,8 +25,8 @@ class PopularAdapter(val listener : PopularListener, private var popularList: Li
     override fun onBindViewHolder(holder: PopularViewHolder, position: Int) {
         val popular : MeditationModel = popularList[position]
 
-        holder.nameMeditation.text = popular.nameMeditation
-        holder.namePodcast.text = popular.namePodcast
+        holder.nameMeditation.setText(popular.nameMeditation)
+        holder.namePodcast.setText(popular.namePodcast)
         holder.icon.setImageResource(popular.icon)
 
         holder.itemView.setOnClickListener {

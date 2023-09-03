@@ -1,8 +1,8 @@
 package com.example.calmmind.business.model
 
 data class MeditationModel(
-    val nameMeditation : String,
-    val namePodcast : String,
+    val nameMeditation : Int,
+    val namePodcast : Int,
     val icon : Int,
     val music : Int
 )

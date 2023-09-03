@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Aigne shocair</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Dia duit blúire bán</string>
+    <string name="explore_meditation">Déan iniúchadh ar mhachnamh</string>
+    <string name="together_with_the_relaxed_mind_app">In éineacht leis an app Relaxed Mind.</string>
+    <string name="category">Catagóir</string>
+    <string name="popular">Coitianta</string>
+    <string name="podcast_by_stainley">Podchraoladh le Stainley</string>
+    <string name="education">Oideachas</string>
+    <string name="arts">Ealaíona</string>
+    <string name="design">Dearadh</string>
+    <string name="all_meditation">Gach meditation</string>
+    <string name="what_is_the_use">Cad é an úsáid</string>
+    <string name="music_for_meditation_helps_to_calm_down_and_distract_from_your_own_thoughts_it_also_helps_the_body_relax_by_stimulating_the_parasympathetic_nervous_system_which_is_responsible_for_calming_down_and_transitioning_to_sleep">Cabhraíonn ceol le haghaidh machnaimh leat chun do chuid smaointe féin a shuaimhniú agus a dhíspreagadh. Cuidíonn sé freisin leis an gcomhlacht a scíth a ligean trí spreagadh a dhéanamh ar an néarchóras parasympathetic, atá freagrach as suaimhniú agus aistriú chun codlata.</string>
+    <string name="name_med1">Gan chailleadh</string>
+    <string name="name_med2">Gléasra don chomhshaol</string>
+    <string name="name_med3">Bagairt Níos Fearr</string>
+    <string name="name_med4">Stát machnaimh</string>
+    <string name="name_med5">Yoga</string>
+    <string name="name_med6">Ceol binaural</string>
+    <string name="name_med7">Gléasra</string>
+    <string name="name_med8">Yoga plandaí</string>
+    <string name="name_podcast1">Podchraoladh ag Vladimir</string>
+    <string name="name_podcast2">Podchraoladh le Stainley</string>
+    <string name="name_podcast3">Podchraoladh le Mendez</string>
+    <string name="welcome">Fáilte romhat!</string>
+    <string name="meditate_with_the_relaxed_mind_app_there_is_a_list_of_meditation_categories_on_the_home_screen_click_on_one_of_them_and_a_list_of_meditations_will_be_available_to_you">Smaoinigh leis an aip Relaxed Mind. Tá liosta de chatagóirí machnaimh ar an scáileán baile, cliceáil ar cheann acu agus beidh liosta machnaimh ar fáil duit.</string>
+    <string name="skip">Scipeáil</string>
+    <string name="when_you_click_on_one_of_the_meditations_the_player_screen_will_open_and_the_music_will_play_you_can_pause_it_rewind_it_turn_on_the_next_one_go_back_to_the_previous_one_shuffle_the_playlist_and_turn_on_repeat">Nuair a chliceálann tú ar cheann de na machnaimh, osclófar scáileán an imreora agus seinnfidh an ceol. Is féidir leat é a chur ar sos, é a athchasadh, an chéad cheann eile a chasadh air, dul ar ais go dtí an ceann roimhe sin, an seinmliosta a shuffle agus athrá a chur ar siúl.</string>
+    <string name="Relaxed_Mind">Aigne relaxed</string>
+
+</resources>

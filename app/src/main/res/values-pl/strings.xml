@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Spokojny umysł</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Witam pusty fragment</string>
+    <string name="explore_meditation">Poznaj medytację</string>
+    <string name="together_with_the_relaxed_mind_app">Razem z aplikacją Relaxed Mind.</string>
+    <string name="category">Kategoria</string>
+    <string name="popular">Popularny</string>
+    <string name="podcast_by_stainley">Podcast autorstwa Stainleya</string>
+    <string name="education">Edukacja</string>
+    <string name="arts">Sztuka</string>
+    <string name="design">Projekt</string>
+    <string name="all_meditation">Cała medytacja</string>
+    <string name="what_is_the_use">Co jest wykorzystane</string>
+    <string name="music_for_meditation_helps_to_calm_down_and_distract_from_your_own_thoughts_it_also_helps_the_body_relax_by_stimulating_the_parasympathetic_nervous_system_which_is_responsible_for_calming_down_and_transitioning_to_sleep">Muzyka do medytacji pomaga się wyciszyć i odwrócić uwagę od własnych myśli. Pomaga także organizmowi zrelaksować się poprzez stymulację przywspółczulnego układu nerwowego, który jest odpowiedzialny za wyciszenie i przejście w sen.</string>
+    <string name="name_med1">Nie pobity</string>
+    <string name="name_med2">Roślina dla środowiska</string>
+    <string name="name_med3">Zagrożenie lepsze</string>
+    <string name="name_med4">Stan medytacyjny</string>
+    <string name="name_med5">Joga</string>
+    <string name="name_med6">Muzyka binauralna</string>
+    <string name="name_med7">Zakład</string>
+    <string name="name_med8">Joga roślinna</string>
+    <string name="name_podcast1">Podcast Władimira</string>
+    <string name="name_podcast2">Podcast autorstwa Stainleya</string>
+    <string name="name_podcast3">Podcast Mendeza</string>
+    <string name="welcome">Powitanie!</string>
+    <string name="meditate_with_the_relaxed_mind_app_there_is_a_list_of_meditation_categories_on_the_home_screen_click_on_one_of_them_and_a_list_of_meditations_will_be_available_to_you">Medytuj z aplikacją Relaxed Mind. Na ekranie głównym znajduje się lista kategorii medytacji. Kliknij na jedną z nich, a lista medytacji będzie dla Ciebie dostępna.</string>
+    <string name="skip">Pominąć</string>
+    <string name="when_you_click_on_one_of_the_meditations_the_player_screen_will_open_and_the_music_will_play_you_can_pause_it_rewind_it_turn_on_the_next_one_go_back_to_the_previous_one_shuffle_the_playlist_and_turn_on_repeat">Kiedy klikniesz na jedną z medytacji, otworzy się ekran odtwarzacza i zacznie grać muzyka. Możesz wstrzymać, przewinąć do tyłu, włączyć następny, wrócić do poprzedniego, przetasować playlistę i włączyć powtarzanie.</string>
+    <string name="Relaxed_Mind">Zrelaksowany umysł</string>
+
+</resources>

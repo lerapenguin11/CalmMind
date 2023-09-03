@@ -1,10 +1,13 @@
 package com.example.calmmind.presentation
 
+import android.Manifest
+import android.content.pm.PackageManager
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.view.WindowManager
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import com.example.calmmind.R
 import com.example.calmmind.databinding.ActivityMainBinding
 import com.example.calmmind.utilits.APP_ACTIVITY
@@ -33,9 +36,36 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
+
+        if (!hasPermissions()) {
+            requestPermissions()
+        }
     }
 
     private fun hideBottomNav() {
         binding.bottomNavigationView.visibility = View.GONE
+    }
+
+    private val permissions = arrayOf(
+        Manifest.permission.READ_EXTERNAL_STORAGE,
+        Manifest.permission.WRITE_EXTERNAL_STORAGE
+    )
+    private val requestCode = 100
+
+    private fun hasPermissions(): Boolean {
+        for (permission in permissions) {
+            if (ContextCompat.checkSelfPermission(
+                    this,
+                    permission
+                ) != PackageManager.PERMISSION_GRANTED
+            ) {
+                return false
+            }
+        }
+        return true
+    }
+
+    private fun requestPermissions() {
+        ActivityCompat.requestPermissions(this, permissions, requestCode)
     }
 }
